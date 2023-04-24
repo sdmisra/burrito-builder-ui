@@ -48,7 +48,19 @@ Here are some things to consider
 * Style the form - it's hideous, and the team is sad about it.
 * Style the container so that orders are nice and tidy, especially when ingredient amounts vary between orders.
 
+## User Flows for Testing:
 
----
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ A user is curious as to what this page is (their friends have been raving about it), so they navigate to it simply to read the contents. 
+
+
+ A user wants a burrito, and knows what they'd like, so they proceed to make an order with their specific demands and submit it.
+
+ A user is worried that their order did not go through - they revisit the page simply to see their entry appear. --- 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INCOMPLETE PATH AS OF TURN IN, what I would do here is set up a fourth stub, that mocks up a version of fakeData that would have one more entry in it that simulates the user flow from the submission test. That way, I can pretend that the submission went through successfully without actually affecting my  live API endpoints
+
+
+
+
+
