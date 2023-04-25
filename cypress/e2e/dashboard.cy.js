@@ -1,5 +1,17 @@
 import { fakeData, sadData, falsePostResp } from "../fixtures/burritoFixture";
 
+// User Flows:
+
+// A user is curious as to what this page is (their friends have been raving about it), so they navigate to it simply to read the contents. 
+
+
+// A user wants a burrito, and knows what they'd like, so they proceed to make an order with their specific demands and submit it.
+
+/* A user is worried that their order did not go through - they revisit the page simply to see their entry appear. --- 
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INCOMPLETE PATH AS OF TURN IN, what I would do here is set up a fourth stub, that mocks up a version of fakeData that would have one more entry in it that simulates the user flow from the submission test. That way, I can pretend that the submission went through successfully without actually affecting my  live API endpoints
+*/
+
 
 
 describe('User should be able to visit page and order a burrito:', () => {

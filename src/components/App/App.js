@@ -14,7 +14,7 @@ class App extends Component {
 
   componentDidMount() {
     getOrders()
-      .then(data=> this.setState({orders : data}))
+      .then(data=> this.setState(...this.state.orders, data))
       .catch(err => console.error('Error fetching:', err));
   }
 
@@ -26,8 +26,9 @@ class App extends Component {
   }
 
   addOrder = (orderObject) => {
+    console.log('ln 29:', orderObject)
     giveOrder(orderObject)
-      .then(order=> this.setState({orders: [...this.state.orders, order]}))
+      .then(order=> this.setState(...this.state, order))
       .catch(err=> console.error('Error Posting:', err))
   }
 
